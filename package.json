@@ -1,0 +1,20 @@
+{
+	"name": "hugo-latest-test",
+	"version": "1.0.0",
+	"description": "Hugo test project",
+	"scripts": {
+		"clean": "rimraf src/assets/bundle/* dist/* src/resources/_gen/assets/*",
+		"start": "NODE_ENV=development hugo -vw server -s src -d ../dist",
+		"build": "NODE_ENV=production hugo -s src -d ../dist --gc --minify"
+	},
+	"keywords": [],
+	"author": "Jonathan Sanderson",
+	"license": "ISC",
+	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^2.1.2",
+		"autoprefixer": "^9.7.6",
+		"postcss": "^7.0.27",
+		"rimraf": "^3.0.2",
+		"tailwindcss": "^1.4.0"
+	}
+}

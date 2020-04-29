@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ $css := resources.Get "css/main.css" }}
+    {{ $css = $css | resources.PostCSS }}
+    {{ if hugo.IsProduction }}
+    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+  </head>
+
+  <body >
+    {{ block "main" . }}{{ end }}
+  
+  </body>
+</html>
