@@ -3,4 +3,5 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 
 [build]
-  writeStats = true
+  useResourceCacheWhen = "fallback"
+  writeStats = false

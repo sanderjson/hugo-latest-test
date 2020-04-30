@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {{ $css := resources.Get "css/main.css" }}
-    {{ $css = $css | resources.PostCSS (dict "config" "./postcss.config.js" "noMap" true) }}
+    {{ $css = $css | resources.PostCSS (dict "config" "./assets/postcss.config.js") }}
     {{ if hugo.IsProduction }}
     {{ $css = $css | minify | fingerprint | resources.PostProcess }}
     {{ end }}
