@@ -1,0 +1,33 @@
+{
+  "htmlElements": {
+    "tags": [
+      "blockquote",
+      "body",
+      "div",
+      "em",
+      "h1",
+      "h2",
+      "head",
+      "html",
+      "link",
+      "meta",
+      "p",
+      "strong"
+    ],
+    "classes": [
+      "bg-indigo-800",
+      "container",
+      "mx-auto",
+      "px-2",
+      "py-4",
+      "text-white",
+      "text-xl"
+    ],
+    "ids": [
+      "inpune-et-spargere",
+      "petunt-mihi-sinitis-armiferos-talibus-neque-humo",
+      "remisit-contulit-festa-cacumina-de-cava-sapiente",
+      "telum-aequalis-delius-tacuit"
+    ]
+  }
+}
